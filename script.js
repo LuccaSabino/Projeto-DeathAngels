@@ -33,3 +33,26 @@ function hamburguer(){
         drop.classList.add('hide')
     }
 }
+
+
+
+
+
+// parte do slideshow------------------------------------------------------------------------------------------
+
+
+let count = 1
+document.getElementById("radio1").checked = true
+
+setInterval(function () {
+    nextImage()
+}, 2500)
+
+function nextImage() {
+    count++
+    if (count > 3) {
+        count = 1
+    }
+
+    document.getElementById("radio" + count).checked = true
+}
