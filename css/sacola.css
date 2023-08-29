@@ -1,0 +1,66 @@
+.cart-page {
+    margin: 100px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background: #80409A;
+}
+
+td {
+    padding: 15px 6px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #80409A;
+    font-size: 12px;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.total-price table {
+    border-top: 8px solid #BAFF00;
+    width: 100%;
+    max-width: 350px;
+}
+
+td:last-child {
+    text-align: center;
+
+}
+
+th:last-child {
+    text-align: center;
+
+}
+
+
+
