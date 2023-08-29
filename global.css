@@ -71,7 +71,49 @@ body{
     
     }
 
+
+
+
+
+
+    /* footer */
+
+    .footer-info{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .footer-info ul li{
+        font-size: 10px !important;
+    }
     
+    .footer-info ul li:not(:last-child){
+        margin-right: 10px !important;
+    }
+    
+    .footer-info p{
+        margin-top: 50px !important;
+        margin-left: 0 !important;
+        font-size: 18px !important;
+    }
+    
+    
+    .newsletter{
+        flex-flow: column !important;
+        margin-left: 0 !important;
+    
+    }
+    
+    #email{
+        font-size: 15px !important;
+        height: 25px !important;
+        width: 200px !important;
+        margin-right: 0px !important;
+    }
+    
+    .social-media{
+        margin-top: 20px;
+        margin-left: 0px !important;
+    }
 }
 
 .hide{
@@ -239,3 +281,87 @@ body{
     transition: 0.2s;
 
 }
+
+
+
+.conteudo{
+    display: flex;
+    height: 100vh;
+}
+
+
+
+/* footer--------------------------------- */
+
+.footer{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+}
+
+.footer-info{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 400px;
+    background-color: #BAFF00;
+}
+
+.footer-info ul{
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+}
+
+.footer-info ul li{
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.footer-info ul li:not(:last-child){
+    margin-right: 30px;
+}
+
+.footer-info p{
+    margin-top: 100px;
+    margin-left: 94px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.newsletter{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 94px;
+    align-items: center;
+
+}
+
+#email{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 20px;
+    height: 40px;
+    width: 650px;
+    margin-right: 840px;
+}
+
+
+.social-media{
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.rodape{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    flex-flow: column nowrap;
+    background-color: #121212;
+}
+
+/* footer--------------------------------- */
