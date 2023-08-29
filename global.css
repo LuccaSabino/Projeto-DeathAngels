@@ -111,9 +111,39 @@ body{
     }
     
     .social-media{
-        margin-top: 20px;
+        margin-top: 20px !important;
         margin-left: 0px !important;
     }
+
+
+    .pagamento{
+        display: none !important;
+    }
+    
+    
+
+    .rodape{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .rodape div{
+        flex-flow: column !important;
+        align-items: center !important;
+        
+    }
+    
+    .rodape select{
+        width: 250px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .rodape p{
+        margin-left: 0 !important;
+    }
+    
+
 }
 
 .hide{
@@ -356,6 +386,12 @@ body{
     margin-left: 40px;
 }
 
+.social-media:hover{
+    width: 39px;
+    height: 39px;
+    transition: 0.2s;
+}
+
 .rodape{
     display: flex;
     width: 100%;
@@ -363,5 +399,49 @@ body{
     flex-flow: column nowrap;
     background-color: #121212;
 }
+
+.rodape p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 94px;
+    color: #BAFF00;
+}
+
+.rodape div{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.rodape select{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 20px;
+    height: 40px;
+    width: 650px;
+    margin-left: 94px;
+    margin-right: 300px;
+}
+
+.pagamento{
+    list-style: none;
+    display: flex;
+}
+
+.pagamento li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 63.53px;
+    border-radius: 5px;
+    background-color: #BAFF00;
+}
+
+.pagamento li:not(:last-child){
+    margin-right: 30px;
+}
+
 
 /* footer--------------------------------- */
