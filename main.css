@@ -11,6 +11,30 @@
     .slide img {
         height: 232px !important;
     }
+
+    .conteudo{
+        height: 3432px !important;
+    }
+
+    .bg p{
+
+        font-size: 15px !important;
+
+    }
+
+    .ajuste{
+        margin-left: 0 !important;
+        align-self: center !important;
+    }
+
+    .ajuste h2{
+        margin-left: 20px !important;
+        font-size: 28px !important;
+    }
+
+    .atencao{
+        height: 900px !important;
+    }
 }
 
 .slider {
@@ -64,20 +88,135 @@
 .conteudo{
     display: flex;
     flex-flow: column;
-    height: 300vh;
+    height: 3532px;
 }
 
-.categorias{
-    height: 1080px;
-    background-color: black;
+.bg{
+    background: url(ASSETS/background.jpg);
 }
 
 .quem{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     height: 528px;
     background-color: #BAFF00;
 }
 
+.ajuste h2{
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.ajuste {
+    margin-left: 336px;
+    display: flex;
+    align-items: center;
+}
+
+.quem p{
+    margin-top: 40px;
+    align-self: center;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.mundo p{
+    margin-top: 40px;
+    align-self: center;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+
+
+
 .mundo{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     height: 650px;
-    background: #80409A;
+}
+
+.atencao{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: white;
+    height: 650px;
+}
+
+.atencao ul{
+    margin-top: 40px;
+    align-self: center;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.categorias{
+    flex-flow: column;
+    height: 1072px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias h2{
+
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+
+}
+
+.categorias ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itensCategorias{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.itensCategorias a{
+    font-weight: 400;
+    font-size: 15px;
+    color: #BAFF00;
+
+}
+.itensCategorias a:hover{
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+
+
+.itensCategorias div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    width: 270px;
+    margin-bottom: 15px;
+}
+.itensCategorias div img{
+    height: 250px;
+    width: 250px;
+}
+.itensCategorias div img:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    height: 260px;
+    width: 260px;
+}
+
+.itensCategorias div svg:hover{
+    cursor: pointer;
+    width: 260px;
+    height: 260px;
+    transition: 0.2s;
 }
