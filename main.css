@@ -13,7 +13,7 @@
     }
 
     .conteudo{
-        height: 3432px !important;
+        height: 4032px !important;
     }
 
     .bg p{
@@ -34,6 +34,43 @@
 
     .atencao{
         height: 900px !important;
+    }
+
+    .categorias{
+        height: 1672px !important;
+    }
+
+    .itensCategorias a{
+        font-size: 10px !important;
+    }  
+    
+    .itensCategorias div{
+        height: 170px !important;
+        width: 170px !important;
+    }
+    .itensCategorias div img{
+        height: 150px !important;
+        width: 150px !important;
+    }
+    .itensCategorias div img:hover{
+        
+        height: 160px !important;
+        width: 160px !important;
+    }
+    
+
+
+    .itensCategorias div svg{
+        
+        width: 150px !important;
+        height: 150px !important;
+        
+    }
+    .itensCategorias div svg:hover{
+        
+        width: 160px !important;
+        height: 160px !important;
+        
     }
 }
 
