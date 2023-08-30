@@ -35,6 +35,31 @@ function hamburguer(){
 }
 
 
+// barra de pesquisa-----------------------------------------------------------------------
+
+
+
+let barra = document.querySelector(".barraPesquisa")
+
+let close = document.querySelector(".close")
+
+let search = document.querySelector("#pesquisa")
+
+search.addEventListener("click",function(){
+
+    if(barra.classList.contains('hide')){
+        barra.classList.remove('hide')
+        barra.classList.add('ok')
+    }
+})
+
+close.addEventListener("click",function(){
+
+    if(barra.classList.contains('ok')){
+        barra.classList.add('hide')
+    }
+    
+})
 
 
 
