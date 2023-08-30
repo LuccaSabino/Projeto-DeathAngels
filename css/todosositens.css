@@ -1,0 +1,94 @@
+.Text{
+    
+    color: #121212;
+    font-family: Archivo Narrow;
+    font-size: 28px;
+    font-style: normal;
+    line-height: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 70px; 
+}
+
+.camisas{
+
+    margin: 10px 20px;
+display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+/* camisas.css */
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-name {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    color: #666;
+  }
+
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  
+
+
+
+
+
+
+
+  
