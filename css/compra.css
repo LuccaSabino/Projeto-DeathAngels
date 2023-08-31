@@ -2,9 +2,36 @@ img{
     cursor: pointer;
 }
 
+@media (max-width: 950px){
+
+    .compra{
+        width: 375px !important;
+        flex-flow: column nowrap !important;
+
+    }
+
+    .conteudo{
+        width: 365px !important;
+        height: 3300px !important;
+
+    }
+
+    #maior{
+        width: 400px !important;
+        height: 400px !important;
+    }
+
+    .menores img{
+        width: 135px !important;
+        height: 135px !important;
+    
+        border: 1px solid grey;
+    }
+}
+
 .conteudo{
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     height: 2500px;
     margin-top: 150px;
 
