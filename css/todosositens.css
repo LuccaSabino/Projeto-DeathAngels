@@ -24,7 +24,27 @@
 
 }
 
-/* Suas outras regras de estilo aqui */
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  .camisas {
+      flex-direction: column;
+  }
+
+  .product-card {
+      width: 80%; /* Ajusta a largura do cartão */
+  }
+}
+
+/* Estilos para telas ainda menores */
+@media (max-width: 480px) {
+  .product-grid {
+      gap: 10px; /* Reduz o espaçamento entre os elementos */
+  }
+
+  .product-card {
+      width: 100%; /* Ajusta a largura do cartão */
+  }
+}
 
 .product-grid {
   display: flex;
@@ -84,7 +104,7 @@
     display: none;
   }
 
-  
+  /* filtro.css */
 
 
 

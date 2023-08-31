@@ -1,38 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const quantityInputs = document.querySelectorAll('.quantity-input');
-    const itemPrices = document.querySelectorAll('.item-price');
-    const subtotalDisplay = document.getElementById('subtotal');
-    const taxDisplay = document.getElementById('tax');
-    const totalDisplay = document.getElementById('total');
-  
-    // Função para calcular o total
-    function updateTotal() {
+$(document).ready(function() {
+  function calcularCarrinho() {
       let subtotal = 0;
-      itemPrices.forEach((price, index) => {
-        const quantity = parseInt(quantityInputs[index].value);
-        const itemPrice = parseFloat(price.textContent.slice(1).replace(',', '')); // Remove o '$' e vírgulas
-        subtotal += quantity * itemPrice;
+
+      $('.cart-info').each(function() {
+          const price = parseFloat($(this).find('small').text().replace('Preço: R$', ''));
+          const quantity = parseInt($(this).closest('tr').find('.quantity-input').val());
+          const itemTotal = price * quantity;
+
+          subtotal += itemTotal;
+          $(this).closest('tr').find('.item-price').text(`R$${itemTotal.toFixed(2)}`);
       });
-  
-      const tax = subtotal * 0.12; // Exemplo de imposto de 12%
+
+      const tax = 25.00; // Taxa fixa de exemplo
       const total = subtotal + tax;
-  
-      subtotalDisplay.textContent = 'R$' + formatMoney(subtotal);
-      taxDisplay.textContent = 'R$' + formatMoney(tax);
-      totalDisplay.textContent = 'R$' + formatMoney(total);
-    }
-  
-    // Adicionar ouvinte de eventos para os inputs de quantidade
-    quantityInputs.forEach(input => {
-      input.addEventListener('input', updateTotal);
-    });
-  
-    // Atualizar o total quando a página carregar
-    updateTotal();
-  });
-  
-  // Função para formatar o dinheiro com vírgulas a cada três dígitos
-  function formatMoney(amount) {
-    return amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+
+      $('#subtotal').text(`R$${subtotal.toFixed(2)}`);
+      $('#tax').text(`R$${tax.toFixed(2)}`);
+      $('#total').text(`R$${total.toFixed(2)}`);
   }
-  
+
+  $('.quantity-input').on('input', calcularCarrinho);
+});

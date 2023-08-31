@@ -73,25 +73,34 @@
     resize:none
 }
 
-/* Estilos para o botão */
+/* Estilos do botão */
 .btn {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #ec4848;
+    background-color: #000000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-  }
-  
-  .btn:hover {
-    background-color: #d23434;
-  }
-  
-  /* Alinha o botão à direita */
-  .message form {
-    text-align: right;
-  }
-  
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.btn:hover {
+    border-radius: 18px;
+    border: #000000;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Alinha o botão ao centro e altera cor ao clicar */
+.message form {
+    text-align: center;
+}
+
+.btn.active {
+    background-color: #fff;
+    color: #000;
+}
