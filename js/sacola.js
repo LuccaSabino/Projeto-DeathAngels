@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const tax = subtotal * 0.12; // Exemplo de imposto de 12%
       const total = subtotal + tax;
   
-      subtotalDisplay.textContent = '$' + formatMoney(subtotal);
-      taxDisplay.textContent = '$' + formatMoney(tax);
-      totalDisplay.textContent = '$' + formatMoney(total);
+      subtotalDisplay.textContent = 'R$' + formatMoney(subtotal);
+      taxDisplay.textContent = 'R$' + formatMoney(tax);
+      totalDisplay.textContent = 'R$' + formatMoney(total);
     }
   
     // Adicionar ouvinte de eventos para os inputs de quantidade
