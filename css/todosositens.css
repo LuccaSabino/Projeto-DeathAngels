@@ -106,10 +106,88 @@
 
   /* filtro.css */
 
+.filter-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 20px 0; /* Adiciona margem superior e inferior */
+  margin-left: 70px; /* Adiciona margem à esquerda */
+}
+
+.filter-list li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.filter-list p {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  color: #000; /* Altera a cor para preto */
+}
+
+#filter, #price-filter {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 20px; /* Ajusta o preenchimento */
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  width: 120px; /* Aumenta a largura do botão */
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  margin-right: 10px; /* Adiciona margem à direita */
+}
+
+#filter option, #price-filter option {
+  color: #333;
+}
 
 
+/* Dropdown estilos */
+.dropdown {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  position: absolute;
+  width: 200px;
+  display: none;
+}
 
+.dropdown.show {
+  display: block;
+}
 
+.dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
 
+.sub-options {
+  list-style-type: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.sub-options li {
+  margin-bottom: 5px;
+}
+
+.sub-options a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sub-options a:hover {
+  text-decoration: underline;
+}
 
   

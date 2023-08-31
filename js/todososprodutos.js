@@ -16,3 +16,5 @@ hoverElements.forEach(element => {
     productImageHover.style.display = 'none';
   });
 });
+
+
