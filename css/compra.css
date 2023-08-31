@@ -1,0 +1,152 @@
+img{
+    cursor: pointer;
+}
+
+.conteudo{
+    display: flex;
+    flex-flow: row;
+    height: 2500px;
+    margin-top: 150px;
+
+}
+
+.imgs{
+    display: flex;
+    flex-flow: column;
+    width: 960px;
+}
+
+#maior{
+    width: 900px;
+    height: 900px;
+    margin-bottom: 40px;
+
+    border: 1px solid grey;
+}
+
+.menores{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menores img{
+    width: 435px;
+    height: 435px;
+
+    border: 1px solid grey;
+}
+
+.info{
+    width: 589px;
+    
+}
+
+.info p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #5E5E5E;
+}
+
+.info h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.info h2{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.tamanhos{
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+}
+
+.tamanhos li{
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 37px;
+    border-radius: 8px;
+    margin-right: 20px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #121212;
+
+    border: 2px solid #5e5e5e77;
+}
+
+.tamanhos li:hover{
+    transition: 0.2s;
+    border: 2px solid #121212;
+
+}
+
+#qtd{
+    text-align: center;
+    width: 50px;
+    height: 54px;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.qtd{
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 54px; 
+    display: flex;
+    border: 2px solid #5e5e5e77;
+}
+
+.qtd p{
+    cursor: pointer;
+    text-align: center;
+    font-size: 40px;
+    color: #121212;
+    width: 56px;
+}
+
+
+.info button{
+    margin-top: 70px;
+    cursor: pointer;
+    width: 100%;
+    height: 64px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #5E5E5E;
+    background-color: white;
+
+    border: 2px solid #5e5e5e77;
+}
+
+.info button:hover{
+    background-color: #121212;
+    color: white;
+    transition: 0.2s;
+}
+
+.info h3{
+    color: #5E5E5E;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+}
+
+.social li{
+    margin-top: 80px;
+    margin-right: 60px;
+}
